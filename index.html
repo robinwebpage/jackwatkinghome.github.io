@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .bg-warning{
+            background-color: brown;
+        }
+        .menuclass li a:hover{
+            color:brown;
+            border-bottom: 2px solid brown;
+        }
+        .martop{
+            margin-top:200px;
+        }
+        .mainheading{
+            font-size:65px;
+            text-align: center;
+        }
+        .pcon{
+            text-align: left; line-height: 30px; font-size:18px; color:rgb(210,180,140)
+        }
+        .pcon:hover{
+            color:black;
+        }
+        .border1{
+            border:1px solid rgb(200,200,200);
+        }
+        .hovereffect:hover{
+            transform: scale(1.02);
+            transition:  .5s ease;
+        }
+        .hovereffect1:hover{
+            transform: scale(1.02);
+            transition: transform .5s ease;
+            background-color: white;
+            box-shadow: 0px 3px 3px 3px rgb(240,240,240);
+            border:none;
+        }
+        .hoverint:hover{
+            color: pink;
+        }
+        .hoverpin:hover{
+            color:red;
+        }
+    </style>
+    
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: rgb(250,250,250)">
+
+    <div class="container-fluid" style="background-color: rgb(124, 103, 81);">
+        <div class="row">
+        <p  class="col-lg-2 mt-2 pl-5" style="color:white; text-align:center"><i>Just Launged...</i></p>
+        <p class="col-lg-5 mt-auto pl-5 ml-auto" style="color:white; text-align: center;">One to one clarity sessions for purposeful founders + designers.</p>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light mt-5">
+        <a class="navbar-brand h1 ml-5 mr-5" href="#"><img src="logoimg.png"></a>
+        <button class="navbar-toggler" onclick="display()" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" id="ispan"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse ml-5" data-aos="zoom-in-down" data-aos-delay="100  " id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto menuclass">
+            <li class="nav-item active ml-5">
+              <a class="nav-link" href="#"><b>Home</b> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ml-5">
+              <a class="nav-link" href="#"><b>Projects</b></a>
+            </li>
+            <li class="nav-item ml-5">
+                <a class="nav-link" href="#"><b>Working together</b></a>
+            </li>
+            
+            <li class="nav-item ml-5">
+                <a class="nav-link" href="#"><b>Recourses</b></a>
+            </li>
+            <li class="nav-item ml-5">
+                <a class="nav-link" href="#"><b>Blogs</b></a>
+            </li>
+            <li class="nav-item ml-5">
+                <a class="nav-link" href="#"><b>About</b></a>
+            </li>
+            <li class="nav-item ml-5">
+                <a class="nav-link" href="#"><b>Contact</b></a>
+            </li>
+          </ul>
+         
+        </div>
+      </nav>
+     
+      
+      <div class="col-10 mt-5 mainheading" data-aos="zoom-out-up" data-aos-delay="200" data-aos-duration="800" class="aos-init aos-animate" style="margin-left:8.33%; text-align: center;">Bringing elevated brands and websites to life for visionary founders.</div>
+      <div class="col-10 mt-5 ml-auto mr-auto" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="800" style=" text-align: center;"><p class="h6"><b>Intentional brand identity and website design experiences <i>with Jack Watkins.</i></b></p></div>
+      <div class="col-12  martop" style="padding-left:0; padding-right:0;">
+        <img data-aos="fade-up" data-aos-delay="300" src="headimg.jpg" alt="Header Image" style="width:100%; height:100%; margin-left:0; margin-right:0; padding-left:0; padding-right:0;">
+     </div>
+     <div class="container martop">
+         <div class="row ">
+             <div class="col-lg-6 pt-5">
+                 <P data-aos="fade-right" class="card__img lazyload"><b>/ Recent projects</b></P>
+                 <h1 class="mt-5" data-aos="fade-right" data-aos-delay="100">Thoughtfully designed, confidently crafted.</h1>
+                 <a href="#" style="text-decoration: none; color:black;"> <div data-aos="zoom-out-up" data-aos-delay="500" data-aos-duration="800" class="mt-5 pb-3 hovereffect" style="border: 1px solid lightgrey;">
+                        <img src="mid1img.jpg"  style="width:100%; height:80%;">
+                        <h3 class="ml-5 mt-5">Jessica Rose Williams</h3>
+                        <p class="ml-5 mt-4 mr-5" >A journey of self-discovery and letting go, explored through thoughtful writing and beautiful imagery.</p>
+                </div></a>
+             </div>
+             <div class="col-lg-6 pt-5">
+                <a href="#" style="text-decoration: none; color:black;"> <div data-aos="zoom-out-up" data-aos-delay="300" data-aos-duration="800" data-aos="fade-left" class="pb-3 hovereffect"style="border: 1px solid lightgrey;">
+                        <img src="mid2img.jpg" style="width:100%; height:80%">
+                        <h3 class="ml-5 mt-5">Portabello</h3>
+                        <P class="ml-5 mt-4 mr-5">Exquisitely crafted Chesterfield furniture, with international influence and a distinctive, modern edge.</P>
+                </div></a>
+               <div style="text-align:center;"> 
+                    <button data-aos="zoom-out-up" data-aos-delay="500" data-aos-duration="800" type="button" style="border: 2px solid brown; width:200px; height:60px; margin-top:80px;">Projects <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+         </div>
+
+     </div>
+     <div class="container pt-5 pb-5 martop" style="background-color:rgb(240,240,240);">
+        <div class="row"> 
+        <div class="col-lg-6 text-center ml-5 pr-5 pl-5 martop" data-aos="fade-up" data-aos-delay="500" style="line-height: 30px;">
+             <p  style="text-align: left;"><b>“Watching Jack bring my brand vision to life in front of my eyes was nothing short of magical. He helped me to make the decisions I needed to make in order for my branding to truly shine and knew exactly what I needed to do at a time when I felt utterly stuck. I couldn’t be happier with the results!”</b></p>
+             <hr style="height:5px;">
+             <p style="text-align: left;">Jessica Rose Williams<p>
+                
+             <p style="text-align: left;">Writer + <i>Lifestyle blogger</i></p>
+         
+        </div>
+        <div class="col-lg-5 mt-5" data-aos="fade-left" data-aos-delay="600">
+                <img src="mid3img.jpg" class="img-fluid">
+            
+        </div> 
+        </div> 
+     </div>
+     <div class="text-center martop" data-aos="fade-up"><b>Ways to work together</b></div>
+     <h1 class="text-center mt-5" data-aos="fade-up" data-aos-delay="100">Let’s elevate your brand.</h1>
+     <div class="container text-center" data-aos="fade-up" data-aos-delay="200" style="margin-top:80px;">
+         <div class="row">
+             <div class="col-lg-4 mt-5 ">
+                <a href="#" style="text-decoration: none; color:black;"> <div class="pl-4 pr-4 pt-5 pb-4 hovereffect1 border1"><p style="text-align: left; line-height: 30px; font-size:22px;">My signature one to one design experiences, crafting commercially impactful brands and websites for big thinkers and visionary founders</p>
+                        <p class="pcon"><b>→ Brand + Website design</b></p>
+                     </div> </a>
+            </div>
+            <div class="col-lg-4 mt-5 ">
+                 <div class="pl-4 pr-4 pt-5 pb-4 hovereffect1 border1"><a href="#" style="text-decoration: none; color:black;"><p style="text-align: left; line-height: 30px; font-size:22px;">Two hour, one to one clarity sessions to give you the confidence you need to move forward with your business, brand, and website.</p>
+                 </a>  <a href="#" style="text-decoration: none; color:black;"><p class="pcon"><b>→ 1:1 Clarity Sessions</b></p>
+                </a></div>
+            </div>
+            <div class="col-lg-4 mt-5 ">
+                 <div class="pl-4 pr-4 pt-5 pb-4 hovereffect1 border1"><a href="#" style="text-decoration: none; color:black;"><p style="text-align: left; line-height: 30px; font-size:22px;">Insightful resources, products, blogs and articles to help you elevate your brand knowledge, confidence, strategy, clarity, and aesthetic.</p>
+                   </a> <a href="#" style="text-decoration: none; color:black;"><p class="pcon"><b>→ Resources</b></p>
+                </a> </div>
+            </div>
+         </div>
+     </div>
+     <div class="container martop pt-5 pb-5" style="background-color:rgb(240,240,240);" >
+         <div class="row">
+             <div class="col-lg-4 martop pt-5 pr-4" style="margin-left:10%; margin-right:8%;" data-aos="fade-up" data-aos-delay="300">
+                <p style="text-align: left; line-height: 30px; font-size:20px;"><b>“Wow, to the millionth degree! This looks amazing, I’m over the moon! You’ve got such a gift, Jack. Thank you so so much.”</b></p>
+                <hr style="height:5px;">
+                <p style="text-align: left;" data-aos="fade-up" data-aos-delay="400">Lucy Sheridan<p>
+                <p style="text-align: left; font-size:20px;" data-aos="fade-up" data-aos-delay="400"><i>The Comparison Coach</i><p>
+             </div>
+             <div class="col-lg-5 mt-5">
+                <img src="mid4img.jpg" data-aos="fade-left" data-aos-delay="200" class="img-fluid">
+             </div>
+         </div> 
+     </div>
+     <div class="container martop">
+         <div class="row">
+            <div class="col-lg-6">
+                <p style="text-decoration: none;"><a href="#" data-aos="fade-right" data-aos-delay="200" style="color:black; text-decoration: none;">/ Newsletter + Resources</a></p>
+                <p class="h1 mt-4" data-aos="fade-right"><b>Subscribe?</b></p>
+                <p class="mt-5" style="line-height: 30px; font-size: 20px;" data-aos="fade-right" data-aos-delay="400">Be the first to receive insightful articles and actionable resources that help you to elevate your brand across every touch point. Take a look behind the scenes at my approach and thought process for projects in the pipeline, as well as the occasional reminder and encouragement to make sure you’re looking after the biggest asset in your business… you!
+                </p>
+                <p class="mt-5" style="font-size: 20px;"  data-aos="fade-right" data-aos-delay="400">Absolutely zero spam or pushy marketing, that’s not how I do things.</p>
+            </div>
+            <div class="col-lg-6 pt-5 pb-5" data-aos="fade-up" data-aos-delay="800" style="border:1px solid lightgrey;">
+              <form>  
+                <lable type="text" class="mt-5">First Name</lable><br>
+                <input type="text" class="mt-2" style=" width:100%; height:50px;"><br><br>
+                <lable type="text" >Last Name</lable><br>
+                <input type="text" class="mt-2" style=" width:100%; height:50px;">
+                <p class="mt-4">I use Flodesk for my email community. By subscribing, you acknowledge that your information will be transferred to Flodesk for processing. <i>Learn more</i></p>
+                <button type="button" class="mt-4" style=" width:100%; height:50px; text-align:center; border: 2px solid brown;">SUBSCRIBE <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+            </form>  
+            </div>
+         </div>
+         
+     </div>
+     <div class="container martop">
+        <div class="row">
+            <div class="col-lg-6 pt-5">
+                <a href="#" style="color:black; text-decoration: none;" data-aos="fade-right">/ Latest from the blog</a>
+                <p class="mt-4 h1" data-aos="fade-right">Thoughts, reflections and explorations.</p>
+                <a href="#" style="text-decoration: none; color:black;">  <div data-aos="fade-up" data-aos-delay="400" class="mt-5 pb-3 hovereffect" style="border: 1px solid lightgray;">
+                    <img src="mid5img.jpg" style="width:100%; height:80%;">
+                    <p class="mt-5 pl-4" style="font-size:22px;"><b>Why good design matters.</b></p>
+                    <p class="mt-4 pl-4" style="font-size:22px;">A particular highlight of the past month has been collaborating with Charlotte Jacklin to create ...</p>
+                </div></a>
+            </div>
+            <div class="col-lg-6 pt-5">
+               <a href="#" style="text-decoration: none; color:black;"> <div  data-aos="fade-up" data-aos-delay="400"class=" pb-3 hovereffect" style="border: 1px solid lightgray;">
+                    <img src="mid6img.jpg" style="width:100%; height:80%; " >
+                    <p class="mt-5 pl-4" style="font-size:22px;"><b>Introducing one to one clarity sessions.</b></p>
+                    <p class="mt-4 pl-4" style="font-size:22px;">When working alongside dreamy clients, one of my favourite parts of the process is where we reall...</p>
+                </div></a>
+                <div class="text-center mt-5">
+                    <button data-aos="fade-up" type="button" class="mt-5" style="width:150px; height:50px; border: 2px solid brown;">Blog <i class="fa fa-arrow-right" aria-hidden="true"></i></button> 
+                </div>
+            </div>
+        </div>
+     </div>
+     <div class="container martop">
+        <div class="row">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delya="300">
+                
+                <img src="mid7img.jpg" style="width:100%; height:100%;">
+        
+            </div>
+            <div class="col-lg-6 text-center my-auto" data-aos="fade-up" data-aos-delya="300">
+                <div class=" pb-3">
+                    <p class="mt-5 pl-5 pr-5 ml-5" style="font-size:50px; text-align: left;"><b>Meaning, intention, purpose.</b></p>
+                    <p class="mt-5 pl-5 pr-3 ml-5" data-aos="fade-up" data-aos-delay="200" style="font-size:22px; text-align: left;">The three key principles that run through everything that I do.</p>
+                </div>
+                <div class=" mt-5 pl-5 pr-5 ml-5" style="text-align:left;">
+                    <button type="button" style="width:150px; height:50px; border:2px solid brown;" data-aos="fade-up" data-aos-offset="120">ABOUT ME <i class="fa fa-arrow-right" aria-hidden="true"></i></button> 
+                </div>
+            </div>
+        </div>
+     </div>
+     <div class="container martop text-center" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400" data-aos-offset="150">
+
+        <h1 style="font-size: 50px;" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200" data-aos-offset="150"><b>Follow the journey</b></h1><br><br>
+        <a class="mr-5"style="color: black; font-size:35px;" href="#!" role="button"><i class="fab fa-instagram fa-lg hoverint"></i></a>
+        <a class="hoverpin"style="color: black; font-size:35px;" href="#!" role="button"><i class="fab fa-pinterest-square fa-lg hoverpin"></i></a>
+    </div>  
+         
+        
+    </div>
+    <hr class="martop">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+            
+            <div>
+              <ul class="navbar-nav"> 
+                <li class="nav-item mr-3" data-aos="fade-down" data-aos-duration="600" data-aos-delay="300" data-aos-offset="50">
+                  <a class="nav-link"  href="#" style="color:black;">Terms of use</a>
+                </li>
+                <li class="nav-item mr-3" data-aos="fade-down" data-aos-duration="600" data-aos-delay="300" data-aos-offset="50">
+                  <a class="nav-link" style="color:black;" href="#">Privacy policy</a>
+                </li>
+                <li class="nav-item mr-3" data-aos="fade-down" data-aos-duration="600" data-aos-delay="300" data-aos-offset="50">
+                  <a class="nav-link" style="color:black;" href="#">No cookies or tracking</a>
+                </li>
+                <li class="nav-item mr-3" data-aos="fade-down" data-aos-duration="600" data-aos-delay="300" data-aos-offset="50">
+                    <a class="nav-link mr-5" style="color:black;" href="#">Back to top</a>
+                </li>
+                <li class="nav-item" data-aos="fade-down" data-aos-duration="600" data-aos-delay="300" data-aos-offset="50">
+                    <p class="nav-link"  style="color:black;">Copyright © 2020 · Jack Watkins Limited</p>
+                </li>
+              </ul> 
+            </div>
+          </nav>
+          
+    </div>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+      <script>
+          function display(){
+                var t=document.getElementById("ispan");
+                if(t.className==="fa fa-times")
+                {
+                    t.className="navbar-toggler-icon";
+                }
+                else{
+                    t.className="fa fa-times";
+                }
+          }
+      </script>
+    </body>
+</html>
