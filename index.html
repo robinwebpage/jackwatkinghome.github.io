@@ -20,9 +20,16 @@
             margin-top:200px;
         }
         .mainheading{
-            font-size:65px;
+            font-size:5vw;
             text-align: center;
+            line-height: 100%;
+            margin-top:90px;
         }
+        div{
+                overflow-x: hidden;
+                overflow-y: hidden;
+
+            }
         .pcon{
             text-align: left; line-height: 30px; font-size:18px; color:rgb(210,180,140)
         }
@@ -50,7 +57,6 @@
             color:red;
         }
         
-        
     </style>
     
   <title>Bootstrap Example</title>
@@ -70,7 +76,7 @@
     <div class="container-fluid" style="background-color: rgb(124, 103, 81);">
         <div class="row">
         <p  class="col-lg-2 mt-2 pl-5" style="color:white; text-align:center"><i>Just Launged...</i></p>
-        <p class="col-lg-5 mt-auto pl-5 ml-auto" style="color:white; text-align: center;">One to one clarity sessions for purposeful founders + designers.</p>
+        <p class="col-lg-5 mt-auto ml-auto" style="color:white; text-align: center;">One to one clarity sessions for purposeful founders + designers.</p>
         </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-light mt-5">
@@ -79,7 +85,7 @@
           <span class="navbar-toggler-icon" id="ispan"></span>
         </button>
       
-        <div class="collapse navbar-collapse ml-5" data-aos="zoom-in-down" data-aos-delay="100  " id="navbarSupportedContent">
+        <div class="collapse navbar-collapse ml-5" data-aos="zoom-in-down" data-aos-delay="100" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto menuclass">
             <li class="nav-item active ml-5">
               <a class="nav-link" href="#"><b>Home</b> <span class="sr-only">(current)</span></a>
@@ -109,7 +115,7 @@
       </nav>
      
       
-      <div class="container mt-5 mainheading" data-aos="zoom-out-up" data-aos-delay="200" data-aos-duration="800" class="aos-init aos-animate" style=" text-align: center;">Bringing elevated brands and websites to life for visionary founders.</div>
+      <div class="container mainheading font-weight-bolder" id="mainhd" data-aos="zoom-out-up" data-aos-delay="200" data-aos-duration="800" style=" text-align: center;">Bringing elevated brands and websites to life for visionary founders.</div>
       <div class="col-10 mt-5 ml-auto mr-auto" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="800" style=" text-align: center;"><p class="h6"><b>Intentional brand identity and website design experiences <i>with Jack Watkins.</i></b></p></div>
       <div class="col-12  martop" style="padding-left:0; padding-right:0;">
         <img data-aos="fade-up" data-aos-delay="300" src="headimg.jpg" alt="Header Image" style="width:100%; height:100%; margin-left:0; margin-right:0; padding-left:0; padding-right:0;">
@@ -303,6 +309,15 @@
                     t.className="fa fa-times fa-2x";
                     
                 }
+          }
+          function mainhd(){
+              var p=getElementById("mainhd");
+              if(screen.width<=750)
+              {
+                  alert("Windo less than 750px");
+                    p.style.fontsize="20px";
+              }
+              
           }
       </script>
     </body>
